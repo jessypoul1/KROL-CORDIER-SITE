@@ -1,0 +1,73 @@
+html{
+  height: 100%;
+  background: url(../images/AtelierDourdan.jpg) no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Montserrat', sans-serif;
+
+}
+body{
+  padding: 0 100px;
+}
+
+.retourAccueil{
+  padding-top: 10px;
+}
+
+.retourAccueil img{
+  width:15%;
+}
+
+h1{
+  display: flex;
+  justify-content: center;
+  font-family: 'Montserrat', sans-serif;
+  color:white;
+}
+.slider-for{
+  padding:0;
+  margin-left:50%;
+  transform: translate(-50%);
+}
+
+.slider-for img{
+  height:auto !important;
+  width: 100px;
+  border:2px white solid;
+}
+.slider img{
+  width: 100px;
+  height: 100px;
+  margin: 20px 10px;
+  border:2px white solid;
+}
+.slick-track img.slick-slide{
+  height: 200px !important;
+}
+.slider-for img.slick-active{
+  height: auto !important;
+}
+.slider{
+  position:relative;
+  padding-top: 50px;
+
+}
+.slick-arrow{
+  top: 170px !important;
+}
+.suivant{
+  position:relative;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.suivant a{
+  text-decoration: none;
+  color:white;
+}
+
+.suivant a:visited{
+  color:white;
+}

@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-size: 62.5%; }
+
+.background, .bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; }
+
+.background h1, .bg h1 {
+margin: 3.5vw 0 0 15vw;
+font-size: 2.5rem;
+color: white;
+font-family: 'Homemade Apple', cursive;
+white-space: pre-line;
+}
+
+.container{
+  display:flex;
+}
+
+.container section {
+position: relative;
+display: flex;
+flex-direction: column;
+align-items: center;
+width: 25vw;
+height: 100vh;
+opacity: 0;
+transition: opacity 0.5s;
+padding: 0 0 0 0; }
+
+.container section h2 {
+font-family: 'Montserrat', sans-serif;
+color:white;
+font-size: 1.5rem;
+margin-top: 20px; }
+
+
+.container section img {
+  width: 170px;
+  margin-top: 30vh;
+  height: 170px;
+  border-radius: 200px; }
+
+  .container section:hover {
+    opacity: 1;
+    background-color: rgba(255, 255, 255, 0.3); }
+
+
+
+@media screen and (max-width: 960px){
+  h1{
+    z-index: 10;
+  }
+    .container section{
+      opacity:1;
+    }
+
+    .container section h2{
+      color:white;
+    }
+  }
+
+
+@media screen and (min-width: 600px) and (max-width: 700px) {
+  .container section img{
+    width:120px;
+    height:120px;
+  }
+
+}
+
+@media screen and (max-width:599px){
+      .container section img{
+        width : 100px;
+        height:100px;
+      }
+      .container section h2{
+        font-size:1rem;
+      }
+
+  }
+
+  @media screen and (orientation:portrait) {
+
+      .background,.container{
+        background: url(../images/background.jpg) no-repeat center center fixed;
+        background-size: cover;
+      }
+
+      .container{
+        display:block;
+      }
+
+      .container section{
+        position : relative;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height:150px;
+        padding:30px 10px;
+        margin-top:80px;
+      }
+
+      .container section img{
+        width: 100px;
+        margin-top: 5vh;
+        height: 100px;
+      }
+}
+@media screen and (max-width:380px){
+  .background,.container{
+    background: url(../images/background.jpg) no-repeat center center fixed;
+    background-size: cover;
+  }
+
+  h1{
+    z-index: 10;
+  }
+  .container{
+    display:block;
+  }
+
+  .container section{
+    position : relative;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height:150px;
+    padding:30px 10px;
+    margin-top:80px;
+  }
+
+  .container section img{
+    width: 100px;
+    margin-top: 5vh;
+    height: 100px;
+  }
+}
